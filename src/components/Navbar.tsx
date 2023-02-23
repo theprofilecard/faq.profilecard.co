@@ -4,31 +4,26 @@ import LinkIcon from '@mui/icons-material/Link';
 
 const Navbar = () => {
   return (
-    <Stack
-      direction="row"
-      height="5vh"
-      alignItems="center"
-      borderBottom="1px solid #e9ebf0"
-      justifyContent="space-between"
-    >
-      <Box marginLeft="10%" marginRight="10%">
-        <Typography>FAQ Profile Card</Typography>
-      </Box>
+    <Box height="5vh" borderBottom="1px solid #e9ebf0">
       <Stack
         direction="row"
         alignItems="center"
+        justifyContent="space-between"
         marginLeft="10%"
         marginRight="10%"
       >
-        <Typography color="primary">Discord</Typography>
-        <IconButton
-          color="primary"
-          href="https://discord.com/invite/Qz2VqyYA72"
-        >
-          <LinkIcon />
-        </IconButton>
+        <Typography>FAQ Profile Card</Typography>
+        <Stack direction="row" alignItems="center">
+          <Typography color="primary">Discord</Typography>
+          <IconButton
+            color="primary"
+            href="https://discord.com/invite/Qz2VqyYA72"
+          >
+            <LinkIcon />
+          </IconButton>
+        </Stack>
       </Stack>
-    </Stack>
+    </Box>
   );
 };
 
