@@ -16,11 +16,11 @@ const CardItem: FC<IProps> = ({ question, answer }) => {
   return (
     <Accordion>
       <AccordionSummary
-        expandIcon={<ExpandMoreIcon />}
+        expandIcon={<ExpandMoreIcon color="primary" />}
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography color="primary.light">{question}</Typography>
+        <Typography color="primary">{question}</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>{answer}</Typography>

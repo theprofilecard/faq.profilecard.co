@@ -72,12 +72,19 @@ const App = () => {
       <Box marginLeft="10%" marginRight="10%" textAlign="center">
         <Box marginTop="1%" marginBottom="1%">
           <TextField
+            variant="outlined"
+            color="primary"
             onChange={searchHandler}
             placeholder="Search"
             InputProps={{
+              sx: {
+                '& fieldset': {
+                  borderColor: 'secondary.light',
+                },
+              },
               endAdornment: (
                 <InputAdornment position="start">
-                  <SearchIcon />
+                  <SearchIcon color="primary" />
                 </InputAdornment>
               ),
             }}

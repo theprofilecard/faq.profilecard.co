@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Navbar = () => {
   return (
-    <Box height="5vh" borderBottom="1px solid #e9ebf0">
+    <Box height="5vh">
       <Stack
         direction="row"
         alignItems="center"
@@ -16,23 +16,24 @@ const Navbar = () => {
         <Link
           href="https://www.profilecard.co/"
           style={{ textDecoration: 'none' }}
+          color="primary.light"
         >
           FAQ Profile Card
         </Link>
         <Stack direction="row" alignItems="center">
           <Stack direction="row" alignItems="center">
-            <Typography color="primary">Discord</Typography>
+            <Typography color="secondary">Discord</Typography>
             <IconButton
-              color="primary"
+              color="secondary"
               href="https://discord.com/invite/Qz2VqyYA72"
             >
               <LinkIcon />
             </IconButton>
           </Stack>
           <Stack direction="row" alignItems="center">
-            <Typography color="primary">Github</Typography>
+            <Typography color="secondary">Github</Typography>
             <IconButton
-              color="primary"
+              color="secondary"
               href="https://github.com/theprofilecard"
             >
               <GitHubIcon />
