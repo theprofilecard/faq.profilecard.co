@@ -1,4 +1,4 @@
-import { IconButton, Stack, Typography } from '@mui/material';
+import { IconButton, Link, Stack, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import LinkIcon from '@mui/icons-material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -13,7 +13,12 @@ const Navbar = () => {
         marginLeft="10%"
         marginRight="10%"
       >
-        <Typography>FAQ Profile Card</Typography>
+        <Link
+          href="https://www.profilecard.co/"
+          style={{ textDecoration: 'none' }}
+        >
+          FAQ Profile Card
+        </Link>
         <Stack direction="row" alignItems="center">
           <Stack direction="row" alignItems="center">
             <Typography color="primary">Discord</Typography>
