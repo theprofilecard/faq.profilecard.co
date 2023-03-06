@@ -1,17 +1,9 @@
 import Navbar from './components/Navbar';
 import { Questions } from './type';
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Box,
-  Typography,
-  TextField,
-  InputAdornment,
-} from '@mui/material/';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Box, TextField, InputAdornment } from '@mui/material/';
 import SearchIcon from '@mui/icons-material/Search';
-import { ReactElement, ReactHTML, useState } from 'react';
+import { useState } from 'react';
+import QuestionsList from './components/QuestionsList';
 
 const App = () => {
   const questions: Questions[] = [
@@ -92,22 +84,7 @@ const App = () => {
           />
         </Box>
         <Box textAlign="start">
-          {searchResult.map((val, idx) => {
-            return (
-              <Accordion key={idx}>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                  <Typography color="primary.light">{val.question}</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>{val.answer}</Typography>
-                </AccordionDetails>
-              </Accordion>
-            );
-          })}
+          <QuestionsList questions={searchResult} />
         </Box>
       </Box>
     </>
