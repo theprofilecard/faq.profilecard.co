@@ -2,7 +2,7 @@ import Navbar from './components/navbar/Navbar';
 import { Questions } from './type';
 import { Box } from '@mui/material/';
 import { useState } from 'react';
-import QuestionsList from './components/QuestionsList';
+import QuestionsList from './components/questions/QuestionsList';
 import SearchInput from './components/SearchInput';
 
 const App = () => {

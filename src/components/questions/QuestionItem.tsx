@@ -12,7 +12,7 @@ type IProps = {
   answer: string;
 };
 
-const CardItem: FC<IProps> = ({ question, answer }) => {
+const QuestionItem: FC<IProps> = ({ question, answer }) => {
   return (
     <Accordion>
       <AccordionSummary
@@ -29,4 +29,4 @@ const CardItem: FC<IProps> = ({ question, answer }) => {
   );
 };
 
-export default CardItem;
+export default QuestionItem;
