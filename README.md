@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# ProfileCard.co Open-Source FAQ Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository is an open-source FAQ page for ProfileCard.co. The page is developed using React library and serves as a resource for users to find answers to frequently asked questions and learn more about the product.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To run this project locally, you will need `npm` and `Node.js` installed on your machine. After installation, run the following commands:
 
-### `yarn start`
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/faq.profilecard.co.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Navigate to the project directory
+cd faq.profilecard.co
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Install dependencies
+npm install
 
-### `yarn test`
+# Start the project
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `yarn build`
+fter the project is successfully started, you can access it at `http://localhost:3000`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Thank you for considering contributing to the ProfileCard.co open-source FAQ page! 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get started, please follow these steps:
 
-### `yarn eject`
+1. Fork this repository and clone it to your local machine.
+2. Install dependencies: `npm install`
+3. Make your changes to the code and ensure that the code lints and tests pass: `npm run lint` and `npm test`
+4. Commit your changes and push to your forked repository.
+5. Create a pull request to the `main` branch of the original repository, describing your changes and any associated issues.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you have any questions, feedback, or concerns, please do not hesitate to open an issue or contact us at [Discord](https://www.discord.profilecard.co/). We appreciate all contributions, and we will do our best to respond as soon as possible.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the terms of the MIT License. See the [LICENSE](LICENSE) file for details.
