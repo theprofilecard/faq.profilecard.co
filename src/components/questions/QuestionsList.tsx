@@ -1,7 +1,7 @@
-import { Questions } from '../type';
+import { Questions } from '../../type';
 import { FC } from 'react';
 import { Box } from '@mui/material';
-import CardItem from './CardItem';
+import CardItem from './QuestionItem';
 
 type IProps = {
   questions: Questions[];
