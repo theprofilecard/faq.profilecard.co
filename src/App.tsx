@@ -1,9 +1,9 @@
 import Navbar from './components/Navbar';
 import { Questions } from './type';
-import { Box, TextField, InputAdornment } from '@mui/material/';
-import SearchIcon from '@mui/icons-material/Search';
+import { Box } from '@mui/material/';
 import { useState } from 'react';
 import QuestionsList from './components/QuestionsList';
+import SearchInput from './components/SearchInput';
 
 const App = () => {
   const questions: Questions[] = [
@@ -71,24 +71,7 @@ const App = () => {
       <Navbar />
       <Box marginLeft="10%" marginRight="10%" textAlign="center">
         <Box marginTop="5%" marginBottom="1%">
-          <TextField
-            variant="outlined"
-            color="primary"
-            onChange={searchHandler}
-            placeholder="Search"
-            InputProps={{
-              sx: {
-                '& fieldset': {
-                  borderColor: 'secondary.light',
-                },
-              },
-              endAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon color="primary" />
-                </InputAdornment>
-              ),
-            }}
-          />
+          <SearchInput searchHandler={searchHandler} />
         </Box>
         <Box textAlign="start">
           <QuestionsList questions={searchResult} />
