@@ -12,7 +12,7 @@ const SearchInput: FC<IProps> = ({ searchHandler }) => {
       variant="outlined"
       color="primary"
       onChange={searchHandler}
-      placeholder="Search"
+      placeholder="Search..."
       InputProps={{
         sx: {
           '& fieldset': {
