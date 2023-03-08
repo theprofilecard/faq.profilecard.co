@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import { Questions } from './type';
 import { Box } from '@mui/material/';
 import { useState } from 'react';
