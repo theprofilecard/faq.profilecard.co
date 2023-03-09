@@ -21,27 +21,24 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Box
-        marginLeft="10%"
-        marginRight="10%"
-        textAlign="center"
-        sx={{ position: 'relative' }}
-      >
+      <Box marginLeft="10%" marginRight="10%" textAlign="center">
         <Box marginTop="5%">
           <SearchInput searchHandler={searchHandler} />
         </Box>
-        <Box
-          sx={{
-            position: 'absolute',
-            height: '100%',
-            width: '100%',
-            background:
-              'linear-gradient(90deg, rgba(138, 121, 255, 0.8) 0%, rgba(206, 77, 164, 0.8) 100%)',
-            filter: 'blur(30px)',
-          }}
-        ></Box>
-        <Box textAlign="start" marginTop="2.5%" marginBottom="2.5%">
-          <QuestionsList questions={searchResult} />
+        <Box sx={{ position: 'relative' }}>
+          <Box
+            sx={{
+              position: 'absolute',
+              height: '100%',
+              width: '100%',
+              background:
+                'linear-gradient(90deg, rgba(138, 121, 255, 0.8) 0%, rgba(206, 77, 164, 0.8) 100%)',
+              filter: 'blur(30px)',
+            }}
+          ></Box>
+          <Box textAlign="start" marginTop="2.5%" marginBottom="2.5%">
+            <QuestionsList questions={searchResult} />
+          </Box>
         </Box>
       </Box>
     </>
